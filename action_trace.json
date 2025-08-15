@@ -1,0 +1,322 @@
+{
+  "actions": [
+    {
+      "details": "to chatgpt.com",
+      "icon": "navigate",
+      "type": "Navigate",
+      "value": "https://chatgpt.com/"
+    },
+    {
+      "coordinates": {
+        "pageX": 953,
+        "pageY": 550,
+        "x": 953,
+        "y": 550
+      },
+      "delay": 1106,
+      "details": "<a> text:\"Stay logged out\" class=\"text-token-text-secondary cursor-pointer font-semibold\" href=\"https://chatgpt.com/#\" data-testid=\"dismiss-welcome\" [ANCHOR_LINK]",
+      "elementRect": {
+        "height": 20,
+        "width": 101,
+        "x": 910,
+        "y": 539
+      },
+      "fallbackSelectors": [
+        "[data-testid=\"dismiss-welcome\"]",
+        ".text-token-text-secondary",
+        "a:contains(\"Stay logged out\")"
+      ],
+      "icon": "click",
+      "selector": "div#radix-«r6» > div > div > a",
+      "timestamp": 1755226451999,
+      "type": "Click",
+      "viewport": {
+        "height": 893,
+        "scrollX": 0,
+        "scrollY": 0,
+        "width": 1920
+      },
+      "waitConditions": {
+        "timeout": 5000,
+        "waitForClickable": true,
+        "waitForEnabled": true,
+        "waitForSelector": true,
+        "waitForVisible": true
+      }
+    },
+    {
+      "coordinates": {
+        "pageX": 679,
+        "pageY": 409,
+        "x": 679,
+        "y": 409
+      },
+      "delay": 770,
+      "details": "<p> class=\"placeholder\"",
+      "elementRect": {
+        "height": 24,
+        "width": 728,
+        "x": 596,
+        "y": 391
+      },
+      "fallbackSelectors": [
+        ".placeholder"
+      ],
+      "icon": "click",
+      "selector": "div#prompt-textarea > p",
+      "timestamp": 1755226452769,
+      "type": "Click",
+      "viewport": {
+        "height": 893,
+        "scrollX": 0,
+        "scrollY": 0,
+        "width": 1920
+      },
+      "waitConditions": {
+        "timeout": 5000,
+        "waitForClickable": true,
+        "waitForEnabled": true,
+        "waitForSelector": true,
+        "waitForVisible": true
+      }
+    },
+    {
+      "details": "\"What are CBFs\"",
+      "icon": "keyboard",
+      "selector": "#prompt-textarea",
+      "type": "Type",
+      "value": "What are CBFs"
+    },
+    {
+      "coordinates": {
+        "pageX": 1308,
+        "pageY": 456,
+        "x": 1308,
+        "y": 456
+      },
+      "delay": 1071,
+      "details": "<svg>",
+      "elementRect": {
+        "height": 20,
+        "width": 20,
+        "x": 1306,
+        "y": 441
+      },
+      "fallbackSelectors": [],
+      "icon": "click",
+      "selector": "button#composer-submit-button > svg",
+      "timestamp": 1755226456415,
+      "type": "Click",
+      "viewport": {
+        "height": 893,
+        "scrollX": 0,
+        "scrollY": 0,
+        "width": 1920
+      },
+      "waitConditions": {
+        "timeout": 5000,
+        "waitForClickable": true,
+        "waitForEnabled": true,
+        "waitForSelector": true,
+        "waitForVisible": true
+      }
+    },
+    {
+      "coordinates": {
+        "pageX": 717,
+        "pageY": 785,
+        "x": 717,
+        "y": 785
+      },
+      "delay": 5066,
+      "details": "<p> class=\"placeholder\"",
+      "elementRect": {
+        "height": 24,
+        "width": 728,
+        "x": 596,
+        "y": 773
+      },
+      "fallbackSelectors": [
+        ".placeholder"
+      ],
+      "icon": "click",
+      "selector": "div#prompt-textarea > p",
+      "timestamp": 1755226461481,
+      "type": "Click",
+      "viewport": {
+        "height": 893,
+        "scrollX": 0,
+        "scrollY": 0,
+        "width": 1920
+      },
+      "waitConditions": {
+        "timeout": 5000,
+        "waitForClickable": true,
+        "waitForEnabled": true,
+        "waitForSelector": true,
+        "waitForVisible": true
+      }
+    },
+    {
+      "details": "\"I want to know about CBFs in control theory\"",
+      "icon": "keyboard",
+      "selector": "#prompt-textarea",
+      "type": "Type",
+      "value": "I want to know about CBFs in control theory"
+    },
+    {
+      "coordinates": {
+        "pageX": 1307,
+        "pageY": 828,
+        "x": 1307,
+        "y": 828
+      },
+      "delay": 1083,
+      "details": "<svg>",
+      "elementRect": {
+        "height": 20,
+        "width": 20,
+        "x": 1306,
+        "y": 823
+      },
+      "fallbackSelectors": [],
+      "icon": "click",
+      "selector": "button#composer-submit-button > svg",
+      "timestamp": 1755226468627,
+      "type": "Click",
+      "viewport": {
+        "height": 893,
+        "scrollX": 0,
+        "scrollY": 0,
+        "width": 1920
+      },
+      "waitConditions": {
+        "timeout": 5000,
+        "waitForClickable": true,
+        "waitForEnabled": true,
+        "waitForSelector": true,
+        "waitForVisible": true
+      }
+    },
+    {
+      "coordinates": {
+        "pageX": 710,
+        "pageY": 825,
+        "x": 710,
+        "y": 825
+      },
+      "delay": 16351,
+      "details": "<div> text:\"Search\" class=\"[display:var(--force-hide-label)] ps-1 pe-1\"",
+      "elementRect": {
+        "height": 17,
+        "width": 47,
+        "x": 707,
+        "y": 824
+      },
+      "fallbackSelectors": [
+        ".[display:var(--force-hide-label)]"
+      ],
+      "icon": "click",
+      "selector": "div#thread-bottom > div > div > div:nth-of-type(2) > form > div:nth-of-type(2) > div > div:nth-of-type(2) > div:nth-of-type(2) > div > span > div > button > span > div",
+      "timestamp": 1755226484978,
+      "type": "Click",
+      "viewport": {
+        "height": 893,
+        "scrollX": 0,
+        "scrollY": 0,
+        "width": 1920
+      },
+      "waitConditions": {
+        "timeout": 5000,
+        "waitForClickable": true,
+        "waitForEnabled": true,
+        "waitForSelector": true,
+        "waitForVisible": true
+      }
+    },
+    {
+      "coordinates": {
+        "pageX": 708,
+        "pageY": 794,
+        "x": 708,
+        "y": 794
+      },
+      "delay": 477,
+      "details": "<p> class=\"placeholder\"",
+      "elementRect": {
+        "height": 24,
+        "width": 728,
+        "x": 596,
+        "y": 773
+      },
+      "fallbackSelectors": [
+        ".placeholder"
+      ],
+      "icon": "click",
+      "selector": "div#prompt-textarea > p",
+      "timestamp": 1755226485455,
+      "type": "Click",
+      "viewport": {
+        "height": 893,
+        "scrollX": 0,
+        "scrollY": 0,
+        "width": 1920
+      },
+      "waitConditions": {
+        "timeout": 5000,
+        "waitForClickable": true,
+        "waitForEnabled": true,
+        "waitForSelector": true,
+        "waitForVisible": true
+      }
+    },
+    {
+      "details": "\"What are Graph CBFs?\"",
+      "icon": "keyboard",
+      "selector": "#prompt-textarea",
+      "type": "Type",
+      "value": "What are Graph CBFs?"
+    },
+    {
+      "coordinates": {
+        "pageX": 1305,
+        "pageY": 837,
+        "x": 1305,
+        "y": 837
+      },
+      "delay": 1017,
+      "details": "<button> id=\"composer-submit-button\" class=\"composer-submit-btn composer-submit-button-color h-9\" aria-label=\"Send prompt\" data-testid=\"send-button\"",
+      "elementRect": {
+        "height": 36,
+        "width": 36,
+        "x": 1298,
+        "y": 815
+      },
+      "fallbackSelectors": [
+        "[data-testid=\"send-button\"]",
+        ".composer-submit-btn",
+        "button[type=\"submit\"]"
+      ],
+      "icon": "click",
+      "selector": "#composer-submit-button",
+      "timestamp": 1755226490417,
+      "type": "Click",
+      "viewport": {
+        "height": 893,
+        "scrollX": 0,
+        "scrollY": 0,
+        "width": 1920
+      },
+      "waitConditions": {
+        "timeout": 5000,
+        "waitForClickable": true,
+        "waitForEnabled": true,
+        "waitForSelector": true,
+        "waitForVisible": true
+      }
+    }
+  ],
+  "date": "2025-08-15T02:55:07.664Z",
+  "id": "rec_1755226507664",
+  "name": "dasdasd"
+}

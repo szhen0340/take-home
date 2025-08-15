@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Action Recorder</title>
+    <script src="./packages/tailwindcss_cdn_4112.js"></script>
+    <style type="text/tailwindcss">
+      .btn-start {
+        @apply bg-emerald-200 hover:bg-emerald-300 text-emerald-800 px-4 py-2 rounded-xl font-medium transition-colors duration-200 flex items-center gap-2 justify-center min-w-[140px] border border-emerald-300;
+      }
+      .btn-stop {
+        @apply bg-rose-200 hover:bg-rose-300 text-rose-800 px-4 py-2 rounded-xl font-medium transition-colors duration-200 flex items-center gap-2 justify-center min-w-[140px] border border-rose-300;
+      }
+      .action-item {
+        @apply flex items-center gap-3 p-3 bg-purple-50 rounded-xl border border-purple-200 shadow-sm;
+      }
+      .action-card {
+        @apply bg-blue-50 border border-blue-200 rounded-xl p-4 hover:shadow-md hover:bg-blue-100 transition-all cursor-pointer;
+      }
+    </style>
+  </head>
+  <body
+    class="w-96 h-[500px] bg-gradient-to-br from-pink-50 to-blue-50 overflow-hidden"
+  >
+    <div class="h-full flex flex-col overflow-hidden shadow-lg">
+      <div
+        class="flex border-b border-purple-200 bg-white/70 backdrop-blur-sm flex-shrink-0"
+      >
+        <button
+          id="record-tab-btn"
+          class="flex-1 py-3 px-4 text-sm font-medium text-purple-700 hover:text-purple-900 border-b-2 border-transparent hover:border-purple-300 active border-purple-400 bg-purple-100"
+        >
+          Record
+        </button>
+        <button
+          id="saved-tab-btn"
+          class="flex-1 py-3 px-4 text-sm font-medium text-blue-700 hover:text-blue-900 border-b-2 border-transparent hover:border-blue-300 bg-blue-100"
+        >
+          Saved
+        </button>
+      </div>
+
+      <div
+        id="record-view"
+        class="flex-1 flex flex-col p-4 bg-white/50 min-h-0"
+      >
+        <div
+          class="flex items-center gap-2 bg-white/60 rounded-xl p-3 border border-slate-200 flex-shrink-0"
+        >
+          <div id="status-dot" class="w-3 h-3 bg-slate-300 rounded-full"></div>
+          <span id="status-text" class="text-sm text-slate-700 font-medium">
+            Ready to record
+          </span>
+        </div>
+
+        <button id="record-btn" class="btn-start mt-4 flex-shrink-0">
+          <img
+            id="record-btn-icon"
+            src="icons/circle.png"
+            alt=""
+            class="w-4 h-4"
+          />
+          <span id="record-btn-text">Start Recording</span>
+        </button>
+
+        <div
+          class="flex items-center justify-between bg-white/60 rounded-xl p-3 border border-indigo-200 mt-4 flex-shrink-0"
+        >
+          <span class="text-sm font-medium text-indigo-800">Actions</span>
+          <span
+            id="action-count"
+            class="text-xs text-indigo-600 bg-indigo-100 px-3 py-1 rounded-full border border-indigo-200"
+          >
+            0
+          </span>
+        </div>
+
+        <div
+          class="flex-1 bg-white/60 rounded-xl border border-gray-200 p-3 mt-4 min-h-0"
+        >
+          <div
+            id="empty-actions-list"
+            class="flex flex-col items-center justify-center h-28 text-center"
+          >
+            <div
+              class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-3 border border-purple-200"
+            >
+              <img src="icons/circle.png" alt="" class="w-6 h-6" />
+            </div>
+            <p class="text-sm text-purple-700 font-medium">
+              No actions recorded yet
+            </p>
+            <p class="text-xs text-purple-500 mt-1">
+              Start recording to capture your actions
+            </p>
+          </div>
+
+          <div
+            id="populated-actions-list"
+            class="space-y-3 h-full overflow-y-auto hidden pr-1"
+          ></div>
+        </div>
+
+        <button
+          id="save-btn"
+          class="w-full py-3 px-4 bg-blue-200 hover:bg-blue-300 disabled:bg-gray-200 disabled:cursor-not-allowed text-blue-800 text-sm font-medium rounded-xl transition-colors border border-blue-300 disabled:border-gray-300 disabled:text-gray-500 mt-4 flex-shrink-0"
+          disabled
+        >
+          Save Recording
+        </button>
+      </div>
+
+      <div
+        id="saved-view"
+        class="flex-1 flex flex-col p-4 hidden bg-white/50 min-h-0"
+      >
+        <div
+          class="flex-1 bg-white/60 rounded-xl border border-gray-200 p-3 min-h-0"
+        >
+          <div
+            id="saved-recordings-list"
+            class="space-y-3 h-full overflow-y-auto pr-1"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <template id="action-item-template">
+      <div class="action-item">
+        <img src="" alt="" class="w-5 h-5 flex-shrink-0" />
+        <div class="flex-1 min-w-0">
+          <div
+            class="action-title text-sm font-semibold text-purple-800 truncate"
+          ></div>
+          <div
+            class="action-details text-xs text-purple-600 truncate mt-1"
+          ></div>
+        </div>
+      </div>
+    </template>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
