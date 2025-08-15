@@ -3,11 +3,11 @@
 Below are screenshots of the extension and action trace:
 
 <p>
-  <img src="extension1.png" width="300" />
-  <img src="extension2.png" width="300" />
+  <img src="./assets/extension1.png" width="300" />
+  <img src="./assets/extension2.png" width="300" />
 </p>
 
-![](action_trace.png)
+![](./assets/action_trace.png)
 
 https://github.com/user-attachments/assets/0a936957-dec4-46c5-97e3-0e398cd8d469
 
