@@ -9,6 +9,8 @@ Below are screenshots of the extension and action trace:
 
 ![](action_trace.png)
 
+https://github.com/user-attachments/assets/0a936957-dec4-46c5-97e3-0e398cd8d469
+
 ## Problem
 
 You will be implementing a version of the [Chrome DevTools Recorder](https://developer.chrome.com/docs/devtools/recorder). This is a tool that allows users to record and replay computer actions, such as clicking, typing, etc on Chrome.
